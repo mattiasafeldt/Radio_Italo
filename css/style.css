@@ -124,3 +124,33 @@ h1, h2, h3 {
     outline-offset: 3px;
     outline: 3px solid #8ff4ce;
 }
+/* CSS för låtkorten */
+.music-list {
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: 1fr;
+}
+.music-card {
+    min-width: 0;
+}
+.music-card img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    aspect-ratio: 3 / 2;
+}
+.music-card h3 {
+    margin: 0 0 0.5rem;
+}
+.music-card p {
+    margin: 0 0 0.5rem;
+}
+.music-card a {
+    color: #FA9DD2;
+    margin: 0 0 0.5rem;
+    text-underline-offset: 0.25rem;
+    transition-duration: 0.3s;
+}
+.music-card a:hover {
+    color: #8ff4ce;
+}
