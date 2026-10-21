@@ -63,3 +63,64 @@ img {
     text-decoration: none;
     color: #fff4ef
 }
+
+.list a[aria-current="page"] {
+    text-decoration: underline;
+    color: #8ff4ce;
+    text-underline-offset: 0.3rem;
+}
+/* CSS för huvudinneållet */
+main {
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    max-width: 1200px;
+}
+main > section + section {
+    margin-top: 2.5rem;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.5rem;
+}
+p {
+    margin-top: 0;
+}
+h1, h2, h3 {
+    line-height: 1.3;
+}
+/* CSS för hero-sektionen */
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+}
+.hero-content p {
+    max-width: 30rem;
+}
+.hero-img {
+    width: 100%;
+    max-width: 500px;
+    align-self: center;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    color: #160f22;
+    background-color: #FA9DD2;
+    padding: 0.8rem 1.3rem;
+    border-radius: 3px;
+    transition-duration: 0.3s;
+}
+.button:hover {
+    background-color: #8ff4ce;
+}
+.button:focus-visible {
+    outline-offset: 3px;
+    outline: 3px solid #8ff4ce;
+}
