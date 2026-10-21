@@ -63,7 +63,9 @@ img {
     text-decoration: none;
     color: #fff4ef
 }
-
+.list a:hover {
+    color: #ff8acb;
+}
 .list a[aria-current="page"] {
     text-decoration: underline;
     color: #8ff4ce;
@@ -153,4 +155,38 @@ h1, h2, h3 {
 }
 .music-card a:hover {
     color: #8ff4ce;
+}
+/* CSS för informationssektionen */
+.about-italo p {
+    max-width: 40rem;
+}
+/* CSS för sidfot */
+.site-footer {
+    background-color: #241a34;
+    padding: 2rem 1rem;
+}
+.site-footer p {
+    color: #cfc5d8;
+    margin: 0.5rem 0 1.5rem;
+}
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 0.7rem;
+}
+.footer-links a {
+    color: #fff4ef;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+.footer-links a:hover {
+    color: #ff8acb;
+}
+.footer-links a[aria-current="page"] {
+    color: #8ff4ce;
+    text-underline-offset: 0.3rem;
+    text-decoration: underline;
 }
