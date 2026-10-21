@@ -190,3 +190,27 @@ h1, h2, h3 {
     text-underline-offset: 0.3rem;
     text-decoration: underline;
 }
+
+/* Anpassar YouTube-spelarna till kortens bredd */
+.music-card iframe {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+}
+/* Styling för text under Upptäck */
+.discover-music .music-card h2 {
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem;
+}
+.discover-music .music-card p {
+    color: #cfc5d8;
+}
+.discover-music .music-card .artist {
+    color: #8ff4ce;
+    font-weight: bold;
+}
+.discover-music > p {
+    color: #cfc5d8;
+    margin-bottom: 2rem;
+}
