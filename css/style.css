@@ -30,3 +30,36 @@ img {
     gap: 1rem;
     padding: 1rem;
 }
+/* CSS för logotyp */
+.logo {
+    color: #FFF4EF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+/* CSS för meny */
+.menu {
+    border: 0;
+    padding: 1rem;
+    color: #FFF4EF;
+    background: transparent;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+/* CSS för huvudnavigation */
+.main-nav {
+    width: 100%;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    gap: 0.8rem;
+    list-style: none;
+}
+.list a {
+    text-decoration: none;
+    color: #fff4ef
+}
