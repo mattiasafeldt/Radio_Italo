@@ -9,3 +9,24 @@ body {
     background-color: #160f22;
     line-height: 1.5;
 }
+
+iframe {
+    border: 0;
+    max-width: 100%;
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+/* CSS för sidhuvud */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #241a34;
+    gap: 1rem;
+    padding: 1rem;
+}
