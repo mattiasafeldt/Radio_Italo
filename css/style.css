@@ -64,7 +64,7 @@ img {
     color: #fff4ef
 }
 .list a:hover {
-    color: #ff8acb;
+    color: #FA9DD2;
 }
 .list a[aria-current="page"] {
     text-decoration: underline;
@@ -183,7 +183,7 @@ h1, h2, h3 {
     transition-duration: 0.3s;
 }
 .footer-links a:hover {
-    color: #ff8acb;
+    color: #FA9DD2;
 }
 .footer-links a[aria-current="page"] {
     color: #8ff4ce;
@@ -238,5 +238,23 @@ h1, h2, h3 {
     outline: 2px solid #8ff4ce;
     outline-offset: 2px;
 }
+/* CSS för knappen till kontaktformuläret */
+#contact-form button {
+    align-self: flex-start;
+    border: 0;
+    background-color: #FA9DD2;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0.75rem 1.2rem;
+    border-radius: 2px;
+    transition-duration: 0.3s;
+}
+#contact-form button:hover {
+    background-color: #8ff4ce;
+}
+#contact-form button:focus-visible {
+    outline: 2px solid #8ff4ce;
+}
+
 
 
