@@ -214,3 +214,29 @@ h1, h2, h3 {
     color: #cfc5d8;
     margin-bottom: 2rem;
 }
+/* CSS för kontaktformuläret */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 35rem;
+}
+#contact-form label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.8rem;
+    border: 1px solid #cfc5d8;
+    border-radius: 0.3rem;
+    color:#cfc5d8;
+    background-color: #241a34;
+    margin-bottom: 1rem;
+}
+#contact-form input:focus-visible, #contact-form textarea:focus-visible {
+    outline: 2px solid #8ff4ce;
+    outline-offset: 2px;
+}
+
+
