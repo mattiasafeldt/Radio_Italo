@@ -79,6 +79,7 @@ main {
 }
 main > section + section {
     margin-top: 2.5rem;
+    border-top: 1px solid #241a34;
 }
 
 h1 {
@@ -278,7 +279,31 @@ h1, h2, h3 {
     margin: 0;
     gap: 2rem;
 }
-
+/* Hero-sektion och knapp */
+.hero {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+}
+.hero img {
+    display: block;
+    border: 2px solid #241a34;
+    border-radius: 3px;
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+/* CSS för låtkorten på större skärmar */
+.music-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 3rem;
+}
+.music-card img {
+    border: 2px solid #241a34;
+    border-radius: 2px;
+}
 }
 
 
