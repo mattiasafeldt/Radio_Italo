@@ -215,6 +215,19 @@ h1, h2, h3 {
     color: #cfc5d8;
     margin-bottom: 2rem;
 }
+/* CSS för musikfakta under Upptäck */
+.song-fact {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.5rem 1rem;
+    margin: 1rem 0;
+}
+.song-fact dt {
+    font-weight: bold;
+}
+.song-fact dd {
+    margin: 0;
+}
 /* CSS för kontaktformuläret */
 #contact-form {
     display: flex;
@@ -330,6 +343,7 @@ h1, h2, h3 {
 .site-header, .site-footer {
     padding-inline: 2rem;
 }
+
 }
 
 
