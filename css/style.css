@@ -48,8 +48,12 @@ img {
     cursor: pointer;
 }
 /* CSS för huvudnavigation */
-.main-nav {
+#main-nav {
     width: 100%;
+    display: none;
+}
+#main-nav.is-open {
+    display: block;
 }
 
 .list {
@@ -284,6 +288,7 @@ h1, h2, h3 {
 }
 #main-nav {
     width: auto;
+    display: block;
 }
 #main-nav .list {
     display: flex;
