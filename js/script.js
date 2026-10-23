@@ -69,6 +69,14 @@ if (contactForm) {
             messagePreview.textContent = messageInput.value.trim();
 
             preview.hidden = false;
+
+            // Sparar informationen i localStorage.
+            const contactMessage = {
+                name: nameInput.value.trim(),
+                email: emailInput.value.trim(),
+                message: messageInput.value.trim()
+            };
+            localStorage.setItem("contactMessage", JSON.stringify(contactMessage));
         }
     });
 }
