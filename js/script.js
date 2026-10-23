@@ -34,7 +34,29 @@ if (contactForm) {
     const emailInput = document.querySelector("#email");
     const messageInput = document.querySelector("#message");
 
+    const error = document.querySelector("#form-error");
+
     contactForm.addEventListener("submit", function (event) {
         event.preventDefault();
+
+        // Tar bort tidigare felmeddelanden.
+        error.textContent = "";
+
+        // Kontrollerar om något fält saknas.
+        if (nameInput.value.trim() === "") {
+            const errorItem = document.createElement("li");
+            errorItem.textContent = "Fyll i ditt namn.";
+            error.appendChild(errorItem);
+        }
+        if (emailInput.value.trim() === "") {
+            const errorItem = document.createElement("li");
+            errorItem.textContent = "Fyll i din e-post.";
+            error.appendChild(errorItem);
+        }
+        if (messageInput.value.trim() === "") {
+            const errorItem = document.createElement("li");
+            errorItem.textContent = "Skriv din fråga.";
+            error.appendChild(errorItem);
+        }
     });
 }
