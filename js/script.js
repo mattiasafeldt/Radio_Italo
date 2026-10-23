@@ -52,6 +52,10 @@ if (contactForm) {
             const errorItem = document.createElement("li");
             errorItem.textContent = "Fyll i din e-post.";
             error.appendChild(errorItem);
+        } else if (!emailInput.value.includes("@")) {
+            const errorItem = document.createElement("li");
+            errorItem.textContent = "Ange en giltig e-postadress."
+            error.appendChild(errorItem);
         }
         if (messageInput.value.trim() === "") {
             const errorItem = document.createElement("li");
