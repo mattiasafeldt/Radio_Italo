@@ -62,5 +62,13 @@ if (contactForm) {
             errorItem.textContent = "Skriv din fråga.";
             error.appendChild(errorItem);
         }
+        // Visar kortet på sidan om fellistan är tom.
+        if (error.children.length === 0) {
+            namePreview.textContent = nameInput.value.trim();
+            emailPreview.textContent = emailInput.value.trim();
+            messagePreview.textContent = messageInput.value.trim();
+
+            preview.hidden = false;
+        }
     });
 }
