@@ -4,13 +4,6 @@
 const menu = document.querySelector(".menu");
 const mainNav = document.querySelector("#main-nav");
 
-// Hämtar element för att generera meddelande från kontaktformulär.
-const preview = document.querySelector("#preview");
-const namePreview = document.querySelector("#name-preview");
-const emailPreview = document.querySelector("#email-preview");
-const messagePreview = document.querySelector("#message-preview");
-const clearPreview = document.querySelector("#clear-preview");
-
 // Hämtar kontaktformuläret
 const contactForm = document.querySelector("#contact-form");
 
@@ -61,22 +54,6 @@ if (contactForm) {
             const errorItem = document.createElement("li");
             errorItem.textContent = "Skriv din fråga.";
             error.appendChild(errorItem);
-        }
-        // Visar kortet på sidan om fellistan är tom.
-        if (error.children.length === 0) {
-            namePreview.textContent = nameInput.value.trim();
-            emailPreview.textContent = emailInput.value.trim();
-            messagePreview.textContent = messageInput.value.trim();
-
-            preview.hidden = false;
-
-            // Sparar informationen i localStorage.
-            const contactMessage = {
-                name: nameInput.value.trim(),
-                email: emailInput.value.trim(),
-                message: messageInput.value.trim()
-            };
-            localStorage.setItem("contactMessage", JSON.stringify(contactMessage));
         }
     });
 }
