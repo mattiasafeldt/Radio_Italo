@@ -248,6 +248,10 @@ h1, h2, h3 {
     margin: 0;
 }
 /* CSS för kontaktformuläret */
+#form-error {
+    color: rgb(255, 76, 76);
+}
+
 #contact-form {
     display: flex;
     flex-direction: column;
