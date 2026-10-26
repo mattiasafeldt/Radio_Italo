@@ -40,12 +40,16 @@ if (contactForm) {
             const errorItem = document.createElement("li");
             errorItem.textContent = "Fyll i ditt namn.";
             error.appendChild(errorItem);
+        } else if (/[0-9]/.test(nameInput.value)) { // Kontrollerar om namnet innehåller siffror.
+            const errorItem = document.createElement("li");
+            errorItem.textContent = "Namnet får ej innehålla siffror."
+            error.appendChild(errorItem);
         }
         if (emailInput.value.trim() === "") {
             const errorItem = document.createElement("li");
             errorItem.textContent = "Fyll i din e-post.";
             error.appendChild(errorItem);
-        } else if (!emailInput.value.includes("@")) {
+        } else if (!emailInput.value.includes("@")) { // Kontrollerar att e-post innehåller @.
             const errorItem = document.createElement("li");
             errorItem.textContent = "Ange en giltig e-postadress."
             error.appendChild(errorItem);
