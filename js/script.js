@@ -23,19 +23,21 @@ menu.addEventListener("click", function () {
 // Koden körs enbart där formuläret finns.
 if (contactForm) {
 
+    // Hämtar kontaktformulärets fält.
     const nameInput = document.querySelector("#name");
     const emailInput = document.querySelector("#email");
     const messageInput = document.querySelector("#message");
 
+    // Hämtar formulärets felmeddelanden.
     const error = document.querySelector("#form-error");
-
+    // Funktion för att validera formulär
     contactForm.addEventListener("submit", function (event) {
         event.preventDefault();
 
         // Tar bort tidigare felmeddelanden.
         error.textContent = "";
 
-        // Kontrollerar om något fält saknas.
+        // Kontrollerar om något fält saknas och skapar felmeddelanden i en ul-lista.
         if (nameInput.value.trim() === "") {
             const errorItem = document.createElement("li");
             errorItem.textContent = "Fyll i ditt namn.";
