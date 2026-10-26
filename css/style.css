@@ -37,6 +37,14 @@ img {
     text-decoration: none;
     font-weight: bold;
     font-size: 1.3rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+.header-logo {
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
 }
 /* CSS för meny */
 .menu {
