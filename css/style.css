@@ -251,7 +251,10 @@ h1, h2, h3 {
 #form-error {
     color: rgb(255, 76, 76);
 }
-
+.contact-email {
+    color: #FA9DD2;
+    text-decoration: none;
+}
 #contact-form {
     display: flex;
     flex-direction: column;
