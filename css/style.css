@@ -179,6 +179,12 @@ h1, h2, h3 {
     background-color: #241a34;
     padding: 2rem 1rem;
 }
+/* CSS för sidfotens logotyp */
+.footer-logo {
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+}
 .site-footer p {
     color: #cfc5d8;
     margin: 0.5rem 0 1.5rem;
