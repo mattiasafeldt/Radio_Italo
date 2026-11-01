@@ -23,7 +23,7 @@ Projektets syfte är att lyfta faram och väcka intresse för musiken. Webbplats
 
 ## Design
 
-Layouten planerades med hjälp av wireframes för dator och mobil.
+Layouten planerades med hjälp av wireframes för dator och mobil. Det visuella utseendet planerades med en mockup för desktop.
 
 ## Begränsningar
 
@@ -32,3 +32,7 @@ Kontaktformuläret skickar ej meddelanden till någon mottagare.
 ## Musik och rättigheter
 
 Musiken på webbplatsen spelas upp via Youtubes inbäddade spelare och tillhör respektive rättighetsinnehavare. Projektet lagrar alltså inga egna video- eller ljudfiler.
+
+## Länk till publicerad webbplats
+
+https://radio-italo.onrender.com
